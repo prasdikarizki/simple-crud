@@ -72,6 +72,6 @@ public class UserController {
     @PutMapping("/{nama}")
     public String updateParam(@RequestParam int id, @RequestBody DataReq body, @PathVariable("nama") String email) {
         userService.update(id, body, email);
-        return "success fully updated";
+        return "success fully updatedjimg";
     }
 }
